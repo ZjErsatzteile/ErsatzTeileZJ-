@@ -17,3 +17,12 @@
 .real-part>div:last-child{padding:18px 20px 0}
 @media(max-width:1100px){.parts-grid-real{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.parts-grid-real{grid-template-columns:1fr}.real-photo{height:190px}}
+
+/* GitHub Pages image fix */
+.parts-grid-real{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.real-part{display:flex!important;flex-direction:column!important;min-height:300px!important;padding:0 0 20px!important;overflow:hidden}
+.real-photo{display:block!important;height:175px!important;width:100%!important;overflow:hidden!important;background:#050a10!important;border:0!important;border-bottom:1px solid #16445f!important}
+.real-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;opacity:1!important;visibility:visible!important;position:relative!important}
+.real-part>div:last-child{padding:16px 20px 0!important}
+@media(max-width:1100px){.parts-grid-real{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.parts-grid-real{grid-template-columns:1fr}.real-photo{height:195px!important}}
